@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Cafe Menu</title>
+    <style>
+        h1.example {
+            font-style: italic;
+            color: #A52A2A;
+            text-shadow: 10px 20px 12px rgb(255, 100, 100, 0.5);
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .menu:link {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        .menu:hover {
+            color: red;
+            background-color: white;
+        }
+        .line {
+            background-color: #FFB6C1	;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        h1.yel {
+            background-color: #FAFAD2;
+            color: #A52A2A;
+            margin: 0;
+        }
+        [href="#v"],[href="#1"] {
+            color: red;
+            font-weight: bolder;
+            margin: 0;
+        }
+        li strong {
+            text-transform: uppercase;
+            color: #DAA520;
+        }
+        ul.mar0 {
+            margin: 0;
+        }
+        .line .menu {
+            border-right: 1.5px solid blue;
+            padding: 10px 50px 10px 50px;
+            margin: 0;
+        }
+        .line form {
+            display: inline;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+<body style="border: 2px solid #A52A2A;">
+    <div>
+        <h1 id="1" class="example">Example Cafe Menu</h1>
+        <div class="line">
+            <a href="/Bai_tap_tuan/Tuan2/Bai1Tuan2_2.html" class="menu"><img src="/2023_BTHTCNWeb_/Tuan2/Bai1/icons8-home-50.png" style="height: 15px; width: 15px;"></a>
+            <a href="#2" class="menu">Starters</a>
+            <a href="#3" class="menu">Main Courses</a>
+            <a href="#4" class="menu">Desserts</a>
+            <form>
+                <input type="search" name="search" placeholder="Search">
+                <input type="button" name="gui" value="Go">
+            </form>
+        </div>
+        <h1 class="yel" id="2">Starters</h1>
+        <ul class="mar0">
+            <li>Chestnut and Mushroom Goujons <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            <li>Goat cheese <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            <li class="up"><strong>Honey Soy Chicken Kebabs <a href="#v" title="Suitable for vegetarians">(v)</a></strong></li>
+            <li>Seafood Salad <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+        </ul>
+        <a href="#1">Back to top</a>
+        <h1 class="yel" id="4">Desserts</h1>
+        <ul class="mar0">
+            <li>Lemon Sorbet <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            <li>Chocolate Mud Pie <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            <li>Pecan Pie <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            <li>Selection of Fine Cheeses from Around the World <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+        </ul>
+            <a href="#1">Back to top</a>
+        <p id="v">Items marked with a (v) are suitable for vegetarians.</p>
+    </div>
+</body>
+</html>

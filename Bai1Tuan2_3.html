@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Cafe Menu</title>
+    <style>
+        h1.example {
+            font-style: italic;
+            color: #A52A2A;
+            text-shadow: 10px 20px 12px rgb(255, 100, 100, 0.5);
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .menu:link {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+        .menu:hover {
+            color: red;
+            background-color: white;
+        }
+        .line {
+            background-color: #FFB6C1	;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        h2.yel {
+            background-color: #FFB6C1;
+            color: #A52A2A;
+            margin: 10px 0 0 20%;
+            letter-spacing: 20px;
+            width: 60%;
+            padding: 2px 0px 2px 20px
+        }
+        [href="#v"],[href="#1"] {
+            color: red;
+            font-weight: bolder;
+            margin: 0;
+        }
+        li strong {
+            text-transform: uppercase;
+            color: #DAA520;
+        }
+        ul.mar0 {
+            margin: 0;
+        }
+        .line .menu {
+            border-right: 1.5px solid blue;
+            padding: 10px 50px 10px 50px;
+            margin: 0;
+        }
+        .line form {
+            display: inline;
+            padding-left: 50px;
+        }
+        .flex {
+            display: flex;
+            min-height: 1000px;
+        }
+        .center {
+            flex-basis: 55%;
+        }
+        .left {
+            flex-basis: 15%;
+        }
+        .right {
+            background-color: black;
+            color: white;
+            flex-basis: 30%;
+            height: 850px;
+            margin-top: 5px;
+            position: sticky;
+            top: 5px;
+        }
+        .left p {
+            background-color: #FFB6C1;
+            border-radius: 20px;
+            padding: 7px 18px;
+            color: white;
+            margin-right: 0;
+        }
+        .left img {
+            border-radius: 100%;
+            box-shadow: 20px 25px 20px 0 #FFB6C1;
+            width: 100%;
+        }
+        .right h3,p {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        form td {
+            text-align: left;
+        }
+        [type=text],[type=tel] {
+            height: 40px;
+            width: 340px;
+            padding-left: 15px;
+            margin: 10px 0;
+        }
+        [name^=coun] {
+            margin-top: 10px;
+        }
+        [name^=but] {
+            height: 35px;
+        }
+        cite {
+            font-weight: bold;
+            color: white;
+            font-size: larger;
+        }
+        .foot {
+            background-color: #FFB6C1;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body style="border: 2px solid #A52A2A; font-family: 'Times New Roman', Times, serif;">
+    <div><!--Header-->
+        <h1 id="1" class="example">Example Cafe Menu</h1>
+        <div class="line">
+            <a href="/Bai_tap_tuan/Tuan2/Bai1Tuan2_2.html" class="menu"><img src="/2023_BTHTCNWeb_/Tuan2/Bai1/icons8-home-50.png" style="height: 15px; width: 15px;"></a>
+            <a href="#2" class="menu">Starters</a>
+            <a href="#3" class="menu">Main Courses</a>
+            <a href="#4" class="menu">Desserts</a>
+            <form>
+                <input type="search" name="search" placeholder="Search">
+                <input type="button" name="gui" value="Go">
+            </form>
+        </div>
+    </div>
+    <div class="flex"><!--Center-->
+        <div class="left">
+            <p>Cafe Latte</p>
+            <p>Capuchino</p>
+            <p>Ocean Blue</p>
+            <p>Ice-cream Cafe</p>
+            <p>Order Online</p>
+            <img src="/2023_BTHTCNWeb_/Tuan2/Bai2/teriyaki.jpg">
+        </div>
+        <div class="center">
+            <h2 class="yel" id="2">Starters</h2>
+            <ul class="mar0">
+                <li>Chestnut and Mushroom Goujons <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+                <li>Goat cheese <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+                <li class="up"><strong>Honey Soy Chicken Kebabs <a href="#v" title="Suitable for vegetarians">(v)</a></strong></li>
+                <li>Seafood Salad <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            </ul>
+            <a href="#1">Back to top</a>
+            <h2 class="yel" id="4">Desserts</h2>
+            <ul class="mar0">
+                <li>Lemon Sorbet <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+                <li>Chocolate Mud Pie <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+                <li>Pecan Pie <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+                <li>Selection of Fine Cheeses from Around the World <a href="#v" title="Suitable for vegetarians">(v)</a></li>
+            </ul>
+            <a href="#1">Back to top</a>
+            <h2 class="yel" id="in">INFORMATION</h2>
+            <form>
+                <table>
+                    <tr valign="top" align="center">
+                        <td>
+                            <input type="text" name="firstname" placeholder="First Name">
+                            <input type="text" name="email" placeholder="Email">
+                            <select style="height: 45px; width: 361px; padding-left: 15px; margin: 10px 0;">
+                                <option value="1">USA</option>
+                                <option value="2">Viet Nam</option>
+                                <option value="3">China</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="lastname" placeholder="Last Name">
+                            <input type="tel" name="tele" placeholder="Telephone">
+                            <input type="radio" name="counV"><span>Vietnamese</span>
+                            <input type="radio" name="counF"><span>Foreigner</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea style="height: 80px; width: 742px; margin-top: 10px;">Comment</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="butsub" value="Submit">
+                            <input type="reset" name="butre" value="Cancel">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="right">
+            <h2 style="margin-top: 0;">Events</h2>
+            <h3>Regular Meetings</h3>
+            <center><img src="/2023_BTHTCNWeb_/Tuan2/Bai1/meeting.png" width="70%"></center>
+            <p>Host your regular team meetings or activities in the comfort of your own private room. Charge up on Kith's aromatic coffee and delectable dishes for that extra boost in your work!</p>
+            <br><h3>Product Launches</h3>
+            <center><img src="/2023_BTHTCNWeb_/Tuan2/Bai1/meeting.png" width="70%"></center>
+            <p>Launch your product with ease in a space that truly fits its image. Create an unforgettable experience for your guests with our spacious outlets! Whether you want to host an intimate celebration or launch an event for hundreds of guests, Kith's space is customisable to your needs.</p>
+        </div>
+    </div>
+    <div class="foot"><!--Footer-->
+        <cite>ABC Company <sup>&#169;</sup> - 12345678 - abccoffee@gmail.com</cite>
+    </div>
+</body>
+</html>
